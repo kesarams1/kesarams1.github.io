@@ -13,49 +13,91 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   
   <style>
-  .jumbotron {
-    background-color: #f4511e; /* Orange */
-    color: #ffffff;
-  }
+    body {
+      padding-left: 220px; /* Width of side nav */
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 220px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #2C3E50; /* Example color */
+      padding-top: 60px;
+    }
+
+    .sidenav a {
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #fff;
+      display: block;
+    }
+
+    .sidenav a:hover {
+      background-color: #1A252F;
+    }
+
+    .section {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
   </style>
 </head>
+
 <body>
 
-<div class="jumbotron text-center">
-  <h1 class="text-center">Surya Deip Reddy Kesaram</h1>
-  <img src="suryadeipreddy_display_picture.jpeg" class="img-circle center-block" alt="Surya's Headshot" width="150">
+  <!-- Side navigation -->
+  <div class="sidenav">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#additional">Additional Tasks</a>
+  </div>
 
-  <h2>Contact Information</h2>
-  <p>Email: <a href="mailto:suryadeipreddy@gmail.com">suryadeipreddy@gmail.com</a></p>
-  <p>Phone: (513) 616-3315</p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/suryadeipreddy/" target="_blank">linkedin.com/in/suryadeipreddy</a></p>
-  <p>GitHub: <a href="https://github.com/suryadeipreddyk" target="_blank">github.com/suryadeipreddyk</a></p>
+  <!-- Main content -->
+  <div class="container-fluid">
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>Hello, I am Surya Deip Reddy Kesaram, a passionate developer specializing in Data Engineering and AI/ML.</p>
+    </section>
 
-  <h2>Background</h2>
-  <p>Highly motivated and detail-oriented data engineering professional...</p>
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <p>Worked on various data engineering pipelines involving Python, Kafka, AWS, SQL, and MS-SQL.</p>
+    </section>
 
-  <h2>Education</h2>
-  <p>Master of Science in Computer Science, University of Dayton, GPA: 3.63 (Expected Aug 2025)</p>
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <p>Masters in Computer Science, University of Dayton, graduating Summer 2025.</p>
+    </section>
 
-  <h2>Experiences</h2>
-  <ul>
-    <li><strong>Manager - Technical Support Representative</strong>, University of Dayton IT (Aug 2024 – Present)</li>
-    <li><strong>AWS Cloud Architect Intern</strong>, Amazon Web Services (Oct 2021 – Dec 2021)</li>
-    <!-- Add more experiences as needed -->
-  </ul>
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python</li>
+        <li>Data Engineering</li>
+        <li>AWS</li>
+        <li>SQL, MS-SQL</li>
+        <li>Kafka</li>
+      </ul>
+    </section>
 
-  <h2>Skills</h2>
-  <ul>
-    <li>Python, Java, SQL, Spark, Kafka, AWS, Docker, Kubernetes, etc.</li>
-  </ul>
-</div>
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <p>Developed a robust data pipeline for real-time analytics utilizing Kafka streams and AWS infrastructure.</p>
+    </section>
 
-<!-- Page Tracker (e.g., FlagCounter) -->
-<div class="text-center">
-  <script type="text/javascript" src="https://flagcounter.me/embed/XXXXXX/"></script>
-</div>
+    <section id="additional" class="section">
+      <h2>Additional Tasks</h2>
+      <p>Additional contributions include technical writing, documentation, and open-source collaborations.</p>
+    </section>
+  </div>
 
 </body>
 </html>
-
-
