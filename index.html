@@ -29,7 +29,7 @@
       font-weight: 700;
     }
 
-    a, p, i {
+    a, p, i, ul {
       font-family: 'Muli', sans-serif;
       font-weight: 400;
     }
@@ -77,7 +77,7 @@
     }
 
     .section {
-      padding: 40px 20px;
+      padding: 20px 20px;
     }
   </style>
 
@@ -134,7 +134,7 @@
       <div class="resume-item">
         <h3 class="mb-0">TECHNICAL SUPPORT REPRESENTATIVE - STUDENT MANAGER</h3>
         <div class="subheading mb-3"; style="font-size: 20px; color: grey;">
-          UNIVERSITY OF DAYTON INFORMATION TECHNOLOGIES, OH, USA |&emsp; AUGUST 2024 – Present
+          UNIVERSITY OF DAYTON INFORMATION TECHNOLOGIES, OH, USA &emsp;|&emsp; AUGUST 2024 – Present
         </div>
         <ul>
           <li>
@@ -159,7 +159,7 @@
       <div class="resume-item">
         <h3 class="mb-0">AWS CLOUD ARCHITECT - INTERN</h3>
         <div class="subheading mb-3"; style="font-size: 20px; color: grey;">
-          AMAZON WEB SERVICES, INDIA |&emsp; OCTOBER 2021 – DECEMBER 2021
+          AMAZON WEB SERVICES, INDIA &emsp;|&emsp; OCTOBER 2021 – DECEMBER 2021
         </div>
         <ul>
           <li>
@@ -184,7 +184,7 @@
       <div class="resume-item">
         <h3 class="mb-0">CISCO CYBER SECURITY ARCHITECT – INTERN</h3>
         <div class="subheading mb-3"; style="font-size: 20px; color: grey;">
-          CISCO NETWORKING ACADEMY, INDIA |&emsp; MARCH 2021 – JUNE 2021
+          CISCO NETWORKING ACADEMY, INDIA &emsp;|&emsp; MARCH 2021 – JUNE 2021
         </div>
         <ul>
           <li>
@@ -205,30 +205,91 @@
         </ul>
       </div>
     </section>
-
+    <hr>
     <section id="education" class="section">
-      <h2 style="font-size: 55px;">Education</h2>
-      <p>Masters in Computer Science, University of Dayton, graduating Summer 2025.</p>
-    </section>
+      <h2 style="font-size: 55px;">EDUCATION</h2>
 
+      <!-- University of Dayton -->
+      <div class="education-item mb-5">
+        <div class="edu-header" style="display: flex; justify-content: space-between; align-items: baseline;">
+          <span class="institution" style="font-size: 25px; font-weight: bold;">UNIVERSITY OF DAYTON</span>
+          <span class="education-date" style="font-size: 25px; color: grey;">SUMMER 2025</span>
+        </div>
+        <p class="degree" style="font-size: 17px; color: grey; margin: 4px 0 0;">
+          MASTER OF SCIENCE IN COMPUTER SCIENCE
+        </p>
+        <p class="gpa" style="margin: 2px 0 0;">GPA: 3.73</p>
+      </div>
+      <br>
+      <!-- Jawaharlal Nehru Technological University -->
+      <div class="education-item">
+        <div class="edu-header" style="display: flex; justify-content: space-between; align-items: baseline;">
+          <span class="institution" style="font-size: 25px; font-weight: bold;">
+            JAWAHARLAL NEHRU TECHNOLOGICAL UNIVERSITY
+          </span>
+          <span class="education-date" style="font-size: 25px; color: grey;">AUGUST 2022</span>
+        </div>
+        <p class="degree" style="font-size: 17px; color: grey; margin: 4px 0 0;">
+          BACHELOR OF TECHNOLOGY, COMPUTER SCIENCE &amp; ENGINEERING
+        </p>
+        <p class="gpa" style="margin: 2px 0 0;">GPA: 6.9</p>
+      </div>
+    </section>
+    <hr>
     <section id="skills" class="section">
-      <h2 style="font-size: 55px;">Skills</h2>
-      <ul>
+      <h2 style="font-size: 55px;">SKILLS</h2>
+      <ul style="font-size: 20px;">
         <li>Python</li>
-        <li>Data Engineering</li>
         <li>AWS</li>
-        <li>SQL, MS-SQL</li>
+        <li>SQL</li>
         <li>Kafka</li>
+        <li>Airflow</li>
+
       </ul>
     </section>
-
+    <hr>
     <section id="projects" class="section">
-      <h2 style="font-size: 55px;">Projects</h2>
-      <p>Developed a robust data pipeline for real-time analytics utilizing Kafka streams and AWS infrastructure.</p>
-    </section>
+      <h2 style="font-size: 55px;">PROJECTS</h2>
 
+      <!-- United Airlines Real-Time Flight Data Ingestion Pipeline -->
+      <div class="project-item mb-5">
+        <h3 class="project-title" style="font-size: 20px; font-weight: bold;">
+          United Airlines Real-Time Flight Data Ingestion Pipeline
+        </h3>
+        <ul style="margin: 8px 0 0 1em; font-size: 17px; color: #333;">
+          <li>Engineered a secure, scalable cloud ingestion pipeline on AWS integrating S3, Glue, and Redshift to process millions of flight records in real time.</li>
+          <li>Programmed and implemented robust ETL jobs in AWS Glue to cleanse, enrich, and normalize flight data, ensuring data integrity.</li>
+          <li>Streamlined end-to-end pipeline management—from CSV ingestion to Redshift loading—using Step Functions, EventBridge, and SNS for alerting.</li>
+        </ul>
+      </div>
+
+      <!-- Kafka AWS Stock Market Streamer -->
+      <div class="project-item mb-5">
+        <h3 class="project-title" style="font-size: 20px; font-weight: bold;">
+          Kafka AWS Stock Market Streamer
+        </h3>
+        <ul style="margin: 8px 0 0 1em; font-size: 17px; color: #333;">
+          <li>Hosted Apache Kafka on AWS EC2 and built a Kafka Producer to stream simulated stock trading data from CSV into a Kafka topic.</li>
+          <li>Developed a Kafka Consumer to transform streaming messages into JSON and store them in an S3 bucket.</li>
+          <li>Configured an AWS Glue Crawler to automatically catalog incoming data in S3, ensuring efficient data management.</li>
+        </ul>
+      </div>
+
+      <!-- Twitter ETL and Data Warehousing Project -->
+      <div class="project-item mb-5">
+        <h3 class="project-title" style="font-size: 20px; font-weight: bold;">
+          Twitter ETL &amp; Data Warehousing Project
+        </h3>
+        <ul style="margin: 8px 0 0 1em; font-size: 17px; color: #333;">
+          <li>Designed a pipeline to convert raw Twitter datasets into Parquet format and store both raw and processed data in S3.</li>
+          <li>Automated metadata cataloging and transformations using AWS Glue jobs, crawlers, and Athena for querying.</li>
+          <li>Orchestrated workflows with AWS Lambda triggers and loaded final data into Amazon Redshift for analytics.</li>
+        </ul>
+      </div>
+    </section>
+    <hr>
     <section id="additional" class="section">
-      <h2 style="font-size: 55px;">Explore More</h2>
+      <h2 style="font-size: 55px;">EXPLORE MORE</h2>
       <p>Additional contributions include technical writing, documentation, and open-source collaborations.</p>
     </section>
   </div>
