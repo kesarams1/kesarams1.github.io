@@ -12,26 +12,64 @@
   <!-- jQuery (required for Bootstrap's JS plugins) -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+
+  <!-- Fonts Styling -->
   <style>
     body {
-      padding-left: 220px; /* Width of side nav */
+      font-family: 'Muli', sans-serif;
+      font-weight: 400;
+      padding-left: 220px;
     }
 
+    h1, h2, h3, h4, h5, h6, div {
+      font-family: 'Saira Extra Condensed', sans-serif;
+      font-weight: 700;
+    }
+
+    a, p, i {
+      font-family: 'Muli', sans-serif;
+      font-weight: 400;
+    }
+
+    .navbar, .nav-link, button, a {
+      font-family: 'Saira Extra Condensed', sans-serif;
+      font-weight: 700;
+    }
+  </style>
+
+  <!-- Side Navigation CSS -->
+  <style>
     .sidenav {
       height: 100%;
       width: 220px;
       position: fixed;
       top: 0;
       left: 0;
-      background-color: #2C3E50; /* Example color */
-      padding-top: 60px;
+      background-color: #2C3E50;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .sidenav img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      object-fit: cover;
+      border: 3px solid #fff;
     }
 
     .sidenav a {
-      padding: 10px 15px;
+      padding: 12px 15px;
       text-decoration: none;
       color: #fff;
       display: block;
+      font-size: 18px;
+      font-weight: 700;
+      margin: 10px 0;
     }
 
     .sidenav a:hover {
@@ -41,44 +79,140 @@
     .section {
       padding: 40px 20px;
     }
-
-    h2 {
-      margin-bottom: 20px;
-    }
   </style>
+
+  <script>
+    var shown = false;
+    function showhideEmail(){
+      if (shown){
+        document.getElementById('email').innerHTML = "Show my email";
+        shown = false;
+      } else {
+        var myemail = "<a href='mailto:kesarams1" + "@" + "udayton.edu'>kesarams1" + "@" + "udayton.edu</a>";
+        document.getElementById('email').innerHTML = myemail;
+        shown = true;
+      }
+    }
+  </script>
 </head>
 
 <body>
 
-  <!-- Side navigation -->
+  <!-- Side Navigation -->
   <div class="sidenav">
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#additional">Additional Tasks</a>
+    
+    <!-- Display Picture -->
+    <img src="suryadeipreddy_display_picture.jpeg" alt="Surya Deip Reddy Headshot">
+    
+    <a class="nav-link" href="#about">ABOUT</a>
+    <a class="nav-link" href="#experience">EXPERIENCE</a>
+    <a class="nav-link" href="#education">EDUCATION</a>
+    <a class="nav-link" href="#skills">SKILLS</a>
+    <a class="nav-link" href="#projects">PROJECTS</a>
+    <a class="nav-link" href="#additional">EXPLORE MORE</a>
   </div>
 
   <!-- Main content -->
   <div class="container-fluid">
     <section id="about" class="section">
-      <h2>About</h2>
-      <p>Hello, I am Surya Deip Reddy Kesaram, a passionate developer specializing in Data Engineering and AI/ML.</p>
+      <h1 style="font-size: 75px;">SURYA DEIP REDDY KESARAM</h1>
+      <p style="font-size: 16px;">
+        DAYTON, OH - 45419. (513)616-9990. 
+        <span id="email" onclick="showhideEmail()" style="cursor:pointer; color:blue; text-decoration:underline;">
+          SHOW MY EMAIL
+        </span>
+      </p>
+      <i style="font-size: 17px;">
+        I design data systems that scale, cloud architectures that perform, and software that works. With over two years of experience across data engineering, cloud infrastructure, and backend development, I build solutions that are efficient, reliable, and built for impact.
+      </i>
     </section>
-
+    <hr>
     <section id="experience" class="section">
-      <h2>Experience</h2>
-      <p>Worked on various data engineering pipelines involving Python, Kafka, AWS, SQL, and MS-SQL.</p>
+      <h2 style="font-size: 55px;">EXPERIENCE</h2>
+
+      <!-- Technical Support Representative – Student Manager -->
+      <div class="resume-item">
+        <h3 class="mb-0">TECHNICAL SUPPORT REPRESENTATIVE - STUDENT MANAGER</h3>
+        <div class="subheading mb-3"; style="font-size: 20px; color: grey;">
+          UNIVERSITY OF DAYTON INFORMATION TECHNOLOGIES, OH, USA |&emsp; AUGUST 2024 – Present
+        </div>
+        <ul>
+          <li>
+            <p>Provisioned and tested deployment images for campus-wide systems using Ivanti Management Console</p>
+          </li>
+          <li>
+            <p>Created and maintained system images for faculty and student laptops reducing setup time by 40%.</p>
+          </li>
+          <li>
+            <p>Delivered on-site IT support across campus classrooms, resolving hardware, software, and network issues to ensure uninterrupted instruction.</p>
+          </li>
+          <li>
+            <p>Operated and troubleshot audiovisual technology for lectures and high-profile events with zero downtime.</p>
+          </li>
+          <li>
+            <p>Diagnosed OS, application, and peripheral issues, reducing recurring tickets by identifying and addressing root causes.</p>
+          </li>
+        </ul>
+      </div>
+      <br>
+      <!-- AWS Cloud Architect – Intern -->
+      <div class="resume-item">
+        <h3 class="mb-0">AWS CLOUD ARCHITECT - INTERN</h3>
+        <div class="subheading mb-3"; style="font-size: 20px; color: grey;">
+          AMAZON WEB SERVICES, INDIA |&emsp; OCTOBER 2021 – DECEMBER 2021
+        </div>
+        <ul>
+          <li>
+            <p>Designed and deployed scalable AWS architectures for a cloud-hosted coffee-house management system.</p>
+          </li>
+          <li>
+            <p>Optimized EC2 usage with reserved instances and auto-scaling policies, reducing infrastructure costs by 20%.</p>
+          </li>
+          <li>
+            <p>Integrated AWS services into CI/CD pipelines alongside DevOps teams, enhancing deployment speed and reliability.</p>
+          </li>
+          <li>
+            <p>Gained hands-on experience with EC2, S3, RDS, Lambda, and CloudFormation through real-world project work.</p>
+          </li>
+          <li>
+            <p>Completed AWS Academy training in Cloud Foundations and Architecting, deepening expertise in cloud-native solutions.</p>
+          </li>
+        </ul>
+      </div>
+      <br>
+      <!-- CISCO Cyber Security Architect – Intern -->
+      <div class="resume-item">
+        <h3 class="mb-0">CISCO CYBER SECURITY ARCHITECT – INTERN</h3>
+        <div class="subheading mb-3"; style="font-size: 20px; color: grey;">
+          CISCO NETWORKING ACADEMY, INDIA |&emsp; MARCH 2021 – JUNE 2021
+        </div>
+        <ul>
+          <li>
+            <p>Designed and implemented secure network architectures with layered defense strategies.</p>
+          </li>
+          <li>
+            <p>Conducted security audits and risk assessments to identify vulnerabilities and strengthen system integrity.</p>
+          </li>
+          <li>
+            <p>Configured network devices using VLANs, dynamic routing protocols, and firewall rules following best practices.</p>
+          </li>
+          <li>
+            <p>Simulated real-world attack scenarios in lab environments to validate and improve security measures.</p>
+          </li>
+          <li>
+            <p>Troubleshot complex network issues to maintain optimal performance and ensure client satisfaction.</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section id="education" class="section">
-      <h2>Education</h2>
+      <h2 style="font-size: 55px;">Education</h2>
       <p>Masters in Computer Science, University of Dayton, graduating Summer 2025.</p>
     </section>
 
     <section id="skills" class="section">
-      <h2>Skills</h2>
+      <h2 style="font-size: 55px;">Skills</h2>
       <ul>
         <li>Python</li>
         <li>Data Engineering</li>
@@ -89,12 +223,12 @@
     </section>
 
     <section id="projects" class="section">
-      <h2>Projects</h2>
+      <h2 style="font-size: 55px;">Projects</h2>
       <p>Developed a robust data pipeline for real-time analytics utilizing Kafka streams and AWS infrastructure.</p>
     </section>
 
     <section id="additional" class="section">
-      <h2>Additional Tasks</h2>
+      <h2 style="font-size: 55px;">Explore More</h2>
       <p>Additional contributions include technical writing, documentation, and open-source collaborations.</p>
     </section>
   </div>
