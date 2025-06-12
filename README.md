@@ -41,7 +41,7 @@ The main sections of the `index.html` site include:
 - Projects
 - Explore More
 
-![Surya Deip Reddy Professional Website](professional_website_frontpage.png)
+![Surya Deip Reddy Professional Website](images/professional_website_frontpage.png)
 
 I used a custom Bootstrap-based template with personalized styling and fonts (Google Fonts: Saira Extra Condensed and Muli) to maintain a modern and professional layout.
 
@@ -84,6 +84,8 @@ Also to mention I've used the autoscaling for responsive website when various re
 ### Page Tracker
 I integrated **FlagCounter** to track page visits and view counts by country:
 
+![Flag Based Page Tracker](images/flag_counter.png)
+
 ```html
       <!-- Flag Counter Widget -->
       <div style="text-align: left; margin-top: 10px;">
@@ -95,7 +97,6 @@ I integrated **FlagCounter** to track page visits and view counts by country:
         </a>
       </div>
 ```
-![Flag Based Page Tracker](images/flag_counter.png)
 
 ---
 
@@ -103,8 +104,7 @@ I integrated **FlagCounter** to track page visits and view counts by country:
 
 ### Basic JavaScript Code
 
-- Digital Clock
-A live digital clock is embedded into the `index.html` implemented using setInterval() and Date() functions, As the digital clock was linked to the "Explore More" section.
+- Digital Clock: A live digital clock is embedded into the `index.html` implemented using setInterval() and Date() functions, As the digital clock was linked to the "Explore More" section.
 
 ```html
     <!-- Digital Clock -->
@@ -117,8 +117,7 @@ A live digital clock is embedded into the `index.html` implemented using setInte
     </script>
 ```
 
-- Analog Clock
-The analog clock uses a <canvas> element and an external JS library (clock.js) provided in the course to provide a ticking analog clock. As the Analog clock was linked to the "Explore More" section.
+- Analog Clock: The analog clock uses a <canvas> element and an external JS library (clock.js) provided in the course to provide a ticking analog clock. As the Analog clock was linked to the "Explore More" section.
 
 ```html
     <!-- Analog Clock -->
@@ -144,8 +143,9 @@ The analog clock uses a <canvas> element and an external JS library (clock.js) p
 
 ![Digital and Analog Clock](images/digital_analog_clock.png)
 
-- Show/Hide Email
-Toggling email visibility is done with a button click using JavaScript, which was included in the "About" section under contact information. And to match with the contact info text size, I've managed to set the exact same size for the email address too.
+- Show/Hide Email: Toggling email visibility is done with a button click using JavaScript, which was included in the "About" section under contact information. And to match with the contact info text size, I've managed to set the exact same size for the email address too.
+
+![Show & Hide Email](images/hide_show_email.png)
 
 ```html
     <!-- Show/Hide Email -->
@@ -165,10 +165,9 @@ Toggling email visibility is done with a button click using JavaScript, which wa
     </script>
 ```
 
-![Show & Hide Email](images/hide_show_email.png)
+- Custom Functionality – Daily Quotes: I used the API Ninjas Quotes API to fetch motivational quotes every minute and display them dynamically. Which was included in the "About" section after contact information.
 
-- Custom Functionality – Daily Quotes
-I used the API Ninjas Quotes API to fetch motivational quotes every minute and display them dynamically. Which was included in the "About" section after contact information.
+![Quote of the Day](images/quote_generator.png)
 
 ```html
     <!-- Quotes refresh 1 minute -->
@@ -201,22 +200,21 @@ I used the API Ninjas Quotes API to fetch motivational quotes every minute and d
       })();
     </script>
 ```
-![Quote of the Day](images/quote_generator.png)
-
 ---
 #### Web API Integration
 
-1. Joke API
-I used the public JokeAPI (https://v2.jokeapi.dev/joke/Any) to fetch and refresh cringe jokes every minute or everytime refreshing the page:
+1. Joke API: I used the public JokeAPI (https://v2.jokeapi.dev/joke/Any) to fetch and refresh cringe jokes every minute or everytime refreshing the page:
+
+![Random Cringe Joke Generator](images/cringe_joke.png)
 
 ```javascript
 setInterval(retrieveAndShowJoke, 60000);
 ```
 
-![Random Cringe Joke Generator](images/cringe_joke.png)
+2. Graphics API – Cat Images: To add fun and visual interest, I integrated The Cat API (https://api.thecatapi.com/v1/images/search) that shows a random cat image with a “Show Me Another Cat!” button.
 
-2. Graphics API – Cat Images
-To add fun and visual interest, I integrated The Cat API (https://api.thecatapi.com/v1/images/search) that shows a random cat image with a “Show Me Another Cat!” button.
+
+![Graphic API - Cat Image Generator](images/cat_image_generator.png)
 
 ```html
     <script>
@@ -244,8 +242,6 @@ To add fun and visual interest, I integrated The Cat API (https://api.thecatapi.
       })();
     </script>
 ```
-
-![Graphic API - Cat Image Generator](images/cat_image_generator.png)
 
 ---
 
