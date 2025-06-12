@@ -47,9 +47,9 @@ I used a custom Bootstrap-based template with personalized styling and fonts (Go
 
 Additionally, I created a separate page `waph.html` introducing the WAPH course and more hands-on tasks, linked in “Explore More” section -> [https://kesarams1.github.io/waph.html](https://kesarams1.github.io/waph.html)
 
-![WAPH Course Website](images\waph_course_frontpage.png)
+![WAPH Course Website](images/waph_course_frontpage.png)
 
-![WAPH Course in Portfolio Website](images\waph_course_in_profile.png)
+![WAPH Course in Portfolio Website](images/waph_course_in_profile.png)
 
 ```html
     <section id="additional" class="section">
@@ -79,7 +79,7 @@ I used **Bootstrap 3.4.1** via CDN, along with custom Google Fonts and additiona
 ```
 Also to mention I've used the autoscaling for responsive website when various resolution devices using the website! 
 
-![Professional Responsive Website](professional_website_various_browsers.png)
+![Professional Responsive Website](images/professional_website_various_browsers.png)
 
 ### Page Tracker
 I integrated **FlagCounter** to track page visits and view counts by country:
@@ -95,7 +95,7 @@ I integrated **FlagCounter** to track page visits and view counts by country:
         </a>
       </div>
 ```
-![Flag Based Page Tracker](flag_counter.png)
+![Flag Based Page Tracker](images/flag_counter.png)
 
 ---
 
@@ -116,6 +116,7 @@ A live digital clock is embedded into the `index.html` implemented using setInte
       setInterval(displayTime, 500);
     </script>
 ```
+
 - Analog Clock
 The analog clock uses a <canvas> element and an external JS library (clock.js) provided in the course to provide a ticking analog clock. As the Analog clock was linked to the "Explore More" section.
 
@@ -141,6 +142,8 @@ The analog clock uses a <canvas> element and an external JS library (clock.js) p
     </script>
 ```
 
+![Digital and Analog Clock](images/digital_analog_clock.png)
+
 - Show/Hide Email
 Toggling email visibility is done with a button click using JavaScript, which was included in the "About" section under contact information. And to match with the contact info text size, I've managed to set the exact same size for the email address too.
 
@@ -161,6 +164,9 @@ Toggling email visibility is done with a button click using JavaScript, which wa
       }
     </script>
 ```
+
+![Show & Hide Email](images/hide_show_email.png)
+
 - Custom Functionality – Daily Quotes
 I used the API Ninjas Quotes API to fetch motivational quotes every minute and display them dynamically. Which was included in the "About" section after contact information.
 
@@ -195,6 +201,72 @@ I used the API Ninjas Quotes API to fetch motivational quotes every minute and d
       })();
     </script>
 ```
+![Quote of the Day](images/quote_generator.png)
+
+---
+#### Web API Integration
+
+1. Joke API
+I used the public JokeAPI (https://v2.jokeapi.dev/joke/Any) to fetch and refresh cringe jokes every minute or everytime refreshing the page:
+
+```javascript
+setInterval(retrieveAndShowJoke, 60000);
+```
+
+![Random Cringe Joke Generator](images/cringe_joke.png)
+
+2. Graphics API – Cat Images
+To add fun and visual interest, I integrated The Cat API (https://api.thecatapi.com/v1/images/search) that shows a random cat image with a “Show Me Another Cat!” button.
+
+```html
+    <script>
+      (function() {
+        const imgEl = document.getElementById('cat-img');
+        const btnEl = document.getElementById('new-cat-btn');
+
+        // Fetch and display a random cat image
+        async function loadRandomCat() {
+          try {
+            const res = await fetch('https://api.thecatapi.com/v1/images/search');
+            if (!res.ok) throw new Error(`Fetch error: ${res.status}`);
+            const [data] = await res.json();
+            imgEl.src = data.url;
+          } catch (err) {
+            console.error('Could not load cat:', err);
+            imgEl.alt = 'Failed to load a cat :(';
+          }
+        }
+        // Initial load when DOM is ready
+        document.addEventListener('DOMContentLoaded', loadRandomCat);
+
+        // Load a new cat on button click
+        btnEl.addEventListener('click', loadRandomCat);
+      })();
+    </script>
+```
+
+![Graphic API - Cat Image Generator](images/cat_image_generator.png)
+
+---
+
+- Cookie Handling – User Visit Tracker
+Cookies are set to record and check the user's last visit. Depending on whether the user is new or returning, a custom message is shown via alert():
+
+```JavaScript
+if (!info) {
+  msg = 'Welcome to my homepage for the first time!';
+} else {
+  msg = `Welcome back! Your last visit was ${info.lastVisit}`;
+}
+```
+![Welcome to Mypage Cookie](images/welcome_page_cookie.png)
+
+Cookie is updated with each new visit using:
+
+```JavaScript
+document.cookie = `visitInfo=${payload}; path=/; max-age=31536000`;
+```
+![Updated Cookie after revisit](images/revisit_cookie.png)
 
 ---
 
