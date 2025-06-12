@@ -6,7 +6,7 @@
 
 **Name**: Surya Deip Reddy Kesaram
 
-**Email**: [mailto:kesarams1@udayton.edu](kesarams1@udayton.edu)
+**Email**: [kesarams1@udayton.edu](mailto:kesarams1@udayton.edu)
 
 ![Surya Deip Reddy's headshot](suryadeipreddy_display_picture.jpeg)
 
@@ -23,7 +23,8 @@ Latest update: June 12, 2025
 
 ## Project Overview 
 
-This project focuses on enhancing front-end web development skills by building a fully responsive professional portfolio and hosting it on GitHub Pages. It integrates various web technologies including HTML, CSS (Bootstrap), JavaScript, jQuery, third-party APIs, and cookies to create a dynamic, interactive experience. 
+This project focuses on enhancing front-end web development skills by building a fully responsive professional portfolio and hosting it on GitHub Pages. 
+It integrates various web technologies including HTML, CSS (Bootstrap), JavaScript, jQuery, third-party APIs, and cookies to create a dynamic, interactive experience. 
 
 Through this project, I gained hands-on experience in DOM manipulation, responsive design, asynchronous API integration, cookie management, and cloud deployment.
 
@@ -45,7 +46,8 @@ The main sections of the `index.html` site include:
 
 I used a custom Bootstrap-based template with personalized styling and fonts (Google Fonts: Saira Extra Condensed and Muli) to maintain a modern and professional layout.
 
-Additionally, I created a separate page `waph.html` introducing the WAPH course and more hands-on tasks, linked in “Explore More” section -> [https://kesarams1.github.io/waph.html](https://kesarams1.github.io/waph.html)
+Additionally, I created a separate page `waph.html` introducing the WAPH course and more hands-on tasks, linked in “Explore More” section -> 
+[https://kesarams1.github.io/waph.html](https://kesarams1.github.io/waph.html)
 
 ![WAPH Course Website](images/waph_course_frontpage.png)
 
@@ -67,6 +69,7 @@ Additionally, I created a separate page `waph.html` introducing the WAPH course 
 
 ### CSS Framework
 I used **Bootstrap 3.4.1** via CDN, along with custom Google Fonts and additional style to modify for a cleaner layout and sidebar-based navigation.
+
 ```html
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -77,6 +80,7 @@ I used **Bootstrap 3.4.1** via CDN, along with custom Google Fonts and additiona
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
 ```
+
 Also to mention I've used the autoscaling for responsive website when various resolution devices using the website! 
 
 ![Professional Responsive Website](images/professional_website_various_browsers.png)
